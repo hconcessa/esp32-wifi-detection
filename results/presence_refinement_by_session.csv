@@ -1,0 +1,193 @@
+normalization,features,model,session,output,balanced_accuracy,recall,specificity
+global,forma (5),logística,A,janela,0.9264,1.0000,0.8528
+global,forma (5),logística,A,estável,0.9361,1.0000,0.8722
+global,forma (5),logística,B,janela,0.6864,0.3728,1.0000
+global,forma (5),logística,B,estável,0.6308,0.2616,1.0000
+global,forma (5),logística,C,janela,0.6310,0.2621,1.0000
+global,forma (5),logística,C,estável,0.6172,0.2345,1.0000
+global,forma (5),logística,D,janela,0.8979,0.9357,0.8601
+global,forma (5),logística,D,estável,0.9290,0.9859,0.8720
+global,forma (5),logística,E,janela,0.8830,0.9675,0.7985
+global,forma (5),logística,E,estável,0.8836,0.9325,0.8346
+global,forma (5),logística,F,janela,0.6742,0.9450,0.4034
+global,forma (5),logística,F,estável,0.6956,0.9650,0.4261
+global,forma (5),MLP,A,janela,0.9333,1.0000,0.8667
+global,forma (5),MLP,A,estável,0.9375,1.0000,0.8750
+global,forma (5),MLP,B,janela,0.8390,0.8387,0.8393
+global,forma (5),MLP,B,estável,0.8282,0.8100,0.8464
+global,forma (5),MLP,C,janela,0.7995,0.6138,0.9853
+global,forma (5),MLP,C,estável,0.7770,0.5724,0.9816
+global,forma (5),MLP,D,janela,0.9186,0.9157,0.9215
+global,forma (5),MLP,D,estável,0.9388,0.8775,1.0000
+global,forma (5),MLP,E,janela,0.7853,0.8025,0.7681
+global,forma (5),MLP,E,estável,0.7891,0.7950,0.7833
+global,forma (5),MLP,F,janela,0.6866,0.9500,0.4233
+global,forma (5),MLP,F,estável,0.6956,0.9650,0.4261
+global,forma + RSSI (6),logística,A,janela,0.9245,0.9961,0.8528
+global,forma + RSSI (6),logística,A,estável,0.9361,1.0000,0.8722
+global,forma + RSSI (6),logística,B,janela,0.8513,0.7025,1.0000
+global,forma + RSSI (6),logística,B,estável,0.8172,0.6344,1.0000
+global,forma + RSSI (6),logística,C,janela,0.7586,0.5172,1.0000
+global,forma + RSSI (6),logística,C,estável,0.7655,0.5310,1.0000
+global,forma + RSSI (6),logística,D,janela,0.9699,0.9518,0.9881
+global,forma + RSSI (6),logística,D,estável,0.9735,0.9538,0.9932
+global,forma + RSSI (6),logística,E,janela,0.8350,0.9950,0.6749
+global,forma + RSSI (6),logística,E,estável,0.8622,1.0000,0.7243
+global,forma + RSSI (6),logística,F,janela,0.5944,0.6150,0.5739
+global,forma + RSSI (6),logística,F,estável,0.6122,0.6050,0.6193
+global,forma + RSSI (6),MLP,A,janela,0.9333,1.0000,0.8667
+global,forma + RSSI (6),MLP,A,estável,0.9403,1.0000,0.8806
+global,forma + RSSI (6),MLP,B,janela,0.9373,0.8746,1.0000
+global,forma + RSSI (6),MLP,B,estável,0.9481,0.9104,0.9857
+global,forma + RSSI (6),MLP,C,janela,0.5781,0.7517,0.4044
+global,forma + RSSI (6),MLP,C,estável,0.6638,0.8828,0.4449
+global,forma + RSSI (6),MLP,D,janela,0.9645,0.9357,0.9932
+global,forma + RSSI (6),MLP,D,estável,0.9629,0.9257,1.0000
+global,forma + RSSI (6),MLP,E,janela,0.8452,0.9850,0.7053
+global,forma + RSSI (6),MLP,E,estável,0.8707,1.0000,0.7414
+global,forma + RSSI (6),MLP,F,janela,0.7088,0.6250,0.7926
+global,forma + RSSI (6),MLP,F,estável,0.7222,0.5950,0.8494
+global,forma + RSSI + temporal (7),logística,A,janela,0.9217,0.9961,0.8472
+global,forma + RSSI + temporal (7),logística,A,estável,0.9361,1.0000,0.8722
+global,forma + RSSI + temporal (7),logística,B,janela,0.8513,0.7025,1.0000
+global,forma + RSSI + temporal (7),logística,B,estável,0.8100,0.6201,1.0000
+global,forma + RSSI + temporal (7),logística,C,janela,0.7568,0.5172,0.9963
+global,forma + RSSI + temporal (7),logística,C,estável,0.7241,0.4483,1.0000
+global,forma + RSSI + temporal (7),logística,D,janela,0.9699,0.9518,0.9881
+global,forma + RSSI + temporal (7),logística,D,estável,0.9735,0.9538,0.9932
+global,forma + RSSI + temporal (7),logística,E,janela,0.8359,0.9950,0.6768
+global,forma + RSSI + temporal (7),logística,E,estável,0.8717,1.0000,0.7433
+global,forma + RSSI + temporal (7),logística,F,janela,0.6044,0.6150,0.5938
+global,forma + RSSI + temporal (7),logística,F,estável,0.6320,0.6050,0.6591
+global,forma + RSSI + temporal (7),MLP,A,janela,0.9286,0.9961,0.8611
+global,forma + RSSI + temporal (7),MLP,A,estável,0.9361,1.0000,0.8722
+global,forma + RSSI + temporal (7),MLP,B,janela,0.9480,0.9032,0.9929
+global,forma + RSSI + temporal (7),MLP,B,estável,0.9749,0.9677,0.9821
+global,forma + RSSI + temporal (7),MLP,C,janela,0.5801,0.8000,0.3603
+global,forma + RSSI + temporal (7),MLP,C,estável,0.6410,0.8483,0.4338
+global,forma + RSSI + temporal (7),MLP,D,janela,0.9679,0.9478,0.9881
+global,forma + RSSI + temporal (7),MLP,D,estável,0.9659,0.9317,1.0000
+global,forma + RSSI + temporal (7),MLP,E,janela,0.8616,0.9875,0.7357
+global,forma + RSSI + temporal (7),MLP,E,estável,0.8622,1.0000,0.7243
+global,forma + RSSI + temporal (7),MLP,F,janela,0.6466,0.7250,0.5682
+global,forma + RSSI + temporal (7),MLP,F,estável,0.7327,0.6700,0.7955
+global,+ mediana bruta (8),logística,A,janela,0.9181,1.0000,0.8361
+global,+ mediana bruta (8),logística,A,estável,0.9375,1.0000,0.8750
+global,+ mediana bruta (8),logística,B,janela,0.8638,0.7276,1.0000
+global,+ mediana bruta (8),logística,B,estável,0.8190,0.6380,1.0000
+global,+ mediana bruta (8),logística,C,janela,0.7655,0.5310,1.0000
+global,+ mediana bruta (8),logística,C,estável,0.7138,0.4276,1.0000
+global,+ mediana bruta (8),logística,D,janela,0.9774,0.9719,0.9829
+global,+ mediana bruta (8),logística,D,estável,0.9655,0.9719,0.9590
+global,+ mediana bruta (8),logística,E,janela,0.8485,0.9650,0.7319
+global,+ mediana bruta (8),logística,E,estável,0.8737,0.9775,0.7700
+global,+ mediana bruta (8),logística,F,janela,0.6044,0.6150,0.5938
+global,+ mediana bruta (8),logística,F,estável,0.6512,0.6150,0.6875
+global,+ mediana bruta (8),MLP,A,janela,0.9300,0.9961,0.8639
+global,+ mediana bruta (8),MLP,A,estável,0.9403,1.0000,0.8806
+global,+ mediana bruta (8),MLP,B,janela,0.9570,0.9176,0.9964
+global,+ mediana bruta (8),MLP,B,estável,0.9803,0.9713,0.9893
+global,+ mediana bruta (8),MLP,C,janela,0.6355,0.7931,0.4779
+global,+ mediana bruta (8),MLP,C,estável,0.7075,0.8966,0.5184
+global,+ mediana bruta (8),MLP,D,janela,0.9561,0.9157,0.9966
+global,+ mediana bruta (8),MLP,D,estável,0.9458,0.8916,1.0000
+global,+ mediana bruta (8),MLP,E,janela,0.8401,0.9425,0.7376
+global,+ mediana bruta (8),MLP,E,estável,0.8590,0.9500,0.7681
+global,+ mediana bruta (8),MLP,F,janela,0.6138,0.6650,0.5625
+global,+ mediana bruta (8),MLP,F,estável,0.5958,0.5950,0.5966
+calibração,forma (5),logística,A,janela,0.7792,1.0000,0.5583
+calibração,forma (5),logística,A,estável,0.8014,1.0000,0.6028
+calibração,forma (5),logística,B,janela,0.8208,0.6416,1.0000
+calibração,forma (5),logística,B,estável,0.8065,0.6129,1.0000
+calibração,forma (5),logística,C,janela,0.7138,0.4276,1.0000
+calibração,forma (5),logística,C,estável,0.7000,0.4000,1.0000
+calibração,forma (5),logística,D,janela,0.8191,1.0000,0.6382
+calibração,forma (5),logística,D,estável,0.7961,1.0000,0.5922
+calibração,forma (5),logística,E,janela,0.8017,0.7650,0.8384
+calibração,forma (5),logística,E,estável,0.8221,0.7525,0.8916
+calibração,forma (5),logística,F,janela,0.7256,0.5250,0.9261
+calibração,forma (5),logística,F,estável,0.7351,0.4900,0.9801
+calibração,forma (5),MLP,A,janela,0.7736,1.0000,0.5472
+calibração,forma (5),MLP,A,estável,0.7889,1.0000,0.5778
+calibração,forma (5),MLP,B,janela,0.8549,0.7276,0.9821
+calibração,forma (5),MLP,B,estável,0.8262,0.6523,1.0000
+calibração,forma (5),MLP,C,janela,0.7237,0.4621,0.9853
+calibração,forma (5),MLP,C,estável,0.6828,0.3655,1.0000
+calibração,forma (5),MLP,D,janela,0.8072,1.0000,0.6143
+calibração,forma (5),MLP,D,estável,0.7961,1.0000,0.5922
+calibração,forma (5),MLP,E,janela,0.8221,0.8400,0.8042
+calibração,forma (5),MLP,E,estável,0.8277,0.8550,0.8004
+calibração,forma (5),MLP,F,janela,0.7360,0.7050,0.7670
+calibração,forma (5),MLP,F,estável,0.7215,0.7100,0.7330
+calibração,forma + RSSI (6),logística,A,janela,0.8181,1.0000,0.6361
+calibração,forma + RSSI (6),logística,A,estável,0.8222,1.0000,0.6444
+calibração,forma + RSSI (6),logística,B,janela,0.9104,0.8208,1.0000
+calibração,forma + RSSI (6),logística,B,estável,0.8781,0.7599,0.9964
+calibração,forma + RSSI (6),logística,C,janela,0.7789,0.5724,0.9853
+calibração,forma + RSSI (6),logística,C,estável,0.8000,0.6000,1.0000
+calibração,forma + RSSI (6),logística,D,janela,0.9549,0.9900,0.9198
+calibração,forma + RSSI (6),logística,D,estável,0.9590,1.0000,0.9181
+calibração,forma + RSSI (6),logística,E,janela,0.8787,0.9875,0.7700
+calibração,forma + RSSI (6),logística,E,estável,0.8999,0.9900,0.8099
+calibração,forma + RSSI (6),logística,F,janela,0.7622,0.5500,0.9744
+calibração,forma + RSSI (6),logística,F,estável,0.7650,0.5300,1.0000
+calibração,forma + RSSI (6),MLP,A,janela,0.8000,1.0000,0.6000
+calibração,forma + RSSI (6),MLP,A,estável,0.8222,1.0000,0.6444
+calibração,forma + RSSI (6),MLP,B,janela,0.9337,0.8674,1.0000
+calibração,forma + RSSI (6),MLP,B,estável,0.9265,0.8566,0.9964
+calibração,forma + RSSI (6),MLP,C,janela,0.7805,0.5793,0.9816
+calibração,forma + RSSI (6),MLP,C,estável,0.7945,0.6552,0.9338
+calibração,forma + RSSI (6),MLP,D,janela,0.8857,1.0000,0.7713
+calibração,forma + RSSI (6),MLP,D,estável,0.8592,1.0000,0.7184
+calibração,forma + RSSI (6),MLP,E,janela,0.8787,0.9875,0.7700
+calibração,forma + RSSI (6),MLP,E,estável,0.8964,1.0000,0.7928
+calibração,forma + RSSI (6),MLP,F,janela,0.7673,0.5800,0.9545
+calibração,forma + RSSI (6),MLP,F,estável,0.7783,0.5850,0.9716
+calibração,forma + RSSI + temporal (7),logística,A,janela,0.8083,1.0000,0.6167
+calibração,forma + RSSI + temporal (7),logística,A,estável,0.8125,1.0000,0.6250
+calibração,forma + RSSI + temporal (7),logística,B,janela,0.9122,0.8244,1.0000
+calibração,forma + RSSI + temporal (7),logística,B,estável,0.8781,0.7599,0.9964
+calibração,forma + RSSI + temporal (7),logística,C,janela,0.7789,0.5724,0.9853
+calibração,forma + RSSI + temporal (7),logística,C,estável,0.8690,0.7379,1.0000
+calibração,forma + RSSI + temporal (7),logística,D,janela,0.9498,0.9900,0.9096
+calibração,forma + RSSI + temporal (7),logística,D,estável,0.9565,1.0000,0.9130
+calibração,forma + RSSI + temporal (7),logística,E,janela,0.8826,0.9800,0.7852
+calibração,forma + RSSI + temporal (7),logística,E,estável,0.9288,0.9850,0.8726
+calibração,forma + RSSI + temporal (7),logística,F,janela,0.7847,0.5750,0.9943
+calibração,forma + RSSI + temporal (7),logística,F,estável,0.7650,0.5300,1.0000
+calibração,forma + RSSI + temporal (7),MLP,A,janela,0.7917,1.0000,0.5833
+calibração,forma + RSSI + temporal (7),MLP,A,estável,0.8069,1.0000,0.6139
+calibração,forma + RSSI + temporal (7),MLP,B,janela,0.9677,0.9355,1.0000
+calibração,forma + RSSI + temporal (7),MLP,B,estável,0.9534,0.9140,0.9929
+calibração,forma + RSSI + temporal (7),MLP,C,janela,0.8131,0.6483,0.9779
+calibração,forma + RSSI + temporal (7),MLP,C,estável,0.8506,0.7379,0.9632
+calibração,forma + RSSI + temporal (7),MLP,D,janela,0.8622,0.9940,0.7304
+calibração,forma + RSSI + temporal (7),MLP,D,estável,0.8677,1.0000,0.7355
+calibração,forma + RSSI + temporal (7),MLP,E,janela,0.8650,0.9125,0.8175
+calibração,forma + RSSI + temporal (7),MLP,E,estável,0.8997,0.9400,0.8593
+calibração,forma + RSSI + temporal (7),MLP,F,janela,0.7776,0.5950,0.9602
+calibração,forma + RSSI + temporal (7),MLP,F,estável,0.7890,0.5950,0.9830
+calibração,+ mediana bruta (8),logística,A,janela,0.8153,1.0000,0.6306
+calibração,+ mediana bruta (8),logística,A,estável,0.8125,1.0000,0.6250
+calibração,+ mediana bruta (8),logística,B,janela,0.9122,0.8244,1.0000
+calibração,+ mediana bruta (8),logística,B,estável,0.8710,0.7455,0.9964
+calibração,+ mediana bruta (8),logística,C,janela,0.7789,0.5724,0.9853
+calibração,+ mediana bruta (8),logística,C,estável,0.8690,0.7379,1.0000
+calibração,+ mediana bruta (8),logística,D,janela,0.9516,0.9920,0.9113
+calibração,+ mediana bruta (8),logística,D,estável,0.9650,1.0000,0.9300
+calibração,+ mediana bruta (8),logística,E,janela,0.8497,0.9200,0.7795
+calibração,+ mediana bruta (8),logística,E,estável,0.8433,0.8825,0.8042
+calibração,+ mediana bruta (8),logística,F,janela,0.7907,0.5900,0.9915
+calibração,+ mediana bruta (8),logística,F,estável,0.7886,0.5800,0.9972
+calibração,+ mediana bruta (8),MLP,A,janela,0.8056,1.0000,0.6111
+calibração,+ mediana bruta (8),MLP,A,estável,0.8069,1.0000,0.6139
+calibração,+ mediana bruta (8),MLP,B,janela,0.9606,0.9211,1.0000
+calibração,+ mediana bruta (8),MLP,B,estável,0.9552,0.9176,0.9929
+calibração,+ mediana bruta (8),MLP,C,janela,0.8062,0.6345,0.9779
+calibração,+ mediana bruta (8),MLP,C,estável,0.8543,0.7379,0.9706
+calibração,+ mediana bruta (8),MLP,D,janela,0.8430,1.0000,0.6860
+calibração,+ mediana bruta (8),MLP,D,estável,0.8353,1.0000,0.6706
+calibração,+ mediana bruta (8),MLP,E,janela,0.8367,0.8825,0.7909
+calibração,+ mediana bruta (8),MLP,E,estável,0.8322,0.8850,0.7795
+calibração,+ mediana bruta (8),MLP,F,janela,0.7819,0.5950,0.9688
+calibração,+ mediana bruta (8),MLP,F,estável,0.7972,0.6000,0.9943

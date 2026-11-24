@@ -1,0 +1,8 @@
+
+dependencies:
+  idf: ">=5.5.0"
+  espressif/esp_csi_gain_ctrl: "0.1.5"
+  espressif/esp-tflite-micro:
+    version: "1.4.1"
+    rules:
+      - if: "target == esp32"

@@ -1,0 +1,162 @@
+{
+  "motion": {
+    "model": "motion_int8",
+    "bytes": 3424,
+    "sha256": "ce819bd2f86e49c555ab5b50b093361920930232b9c9589e63ec01b38b32d6a3",
+    "float32_tflite_bytes": 3260,
+    "parameters": 273,
+    "ops": [
+      "FULLY_CONNECTED",
+      "LOGISTIC"
+    ],
+    "quantization": {
+      "in_scale": 0.02206612564623356,
+      "in_zero": -44,
+      "out_scale": 0.00390625,
+      "out_zero": -128
+    },
+    "input_shape": [
+      1,
+      7
+    ],
+    "output_shape": [
+      1,
+      1
+    ],
+    "float_torch_vs_keras_max_abs": 1.1920928955078125e-07,
+    "int8_vs_float_max_abs": 0.021970391273498535,
+    "int8_vs_float_mean_abs": 0.0016996090998873115,
+    "int8_vs_float_decision_agreement": 1.0,
+    "input_clip_fraction": 0.00018747656542932134,
+    "n_representative": 1524
+  },
+  "presence": {
+    "model": "presence_int8",
+    "bytes": 3480,
+    "sha256": "d8fa389a5387054a723cee024194a0d7f86f9f53e596b90c42289442a4a18024",
+    "float32_tflite_bytes": 3288,
+    "parameters": 273,
+    "ops": [
+      "FULLY_CONNECTED",
+      "LOGISTIC"
+    ],
+    "quantization": {
+      "in_scale": 0.023864444345235825,
+      "in_zero": -34,
+      "out_scale": 0.00390625,
+      "out_zero": -128
+    },
+    "input_shape": [
+      1,
+      7
+    ],
+    "output_shape": [
+      1,
+      1
+    ],
+    "float_torch_vs_keras_max_abs": 1.1920928955078125e-07,
+    "int8_vs_float_max_abs": 0.03806036710739136,
+    "int8_vs_float_mean_abs": 0.0024437725078314543,
+    "int8_vs_float_decision_agreement": 0.9975938402309913,
+    "input_clip_fraction": 6.874742197167606e-05,
+    "n_representative": 4156
+  },
+  "motion_int8_live": [
+    {
+      "log": "live_A",
+      "n": 762,
+      "raw_decision_agreement": 0.9973753280839895,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.01797395944595337
+    },
+    {
+      "log": "live_B",
+      "n": 781,
+      "raw_decision_agreement": 1.0,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.030442118644714355
+    },
+    {
+      "log": "live_C",
+      "n": 654,
+      "raw_decision_agreement": 1.0,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.025715172290802002
+    }
+  ],
+  "pc_vs_esp32_tflm": {
+    "windows": 2197,
+    "identical_int8_outputs": 2196,
+    "max_abs_diff_lsb": 1
+  },
+  "presence_int8_sessions": [
+    {
+      "session": "A",
+      "role": "dataset",
+      "n": 830,
+      "raw_decision_agreement": 0.9975903614457832,
+      "stable_state_agreement": 0.9987951807228915,
+      "max_abs_dp": 0.03217291831970215
+    },
+    {
+      "session": "B",
+      "role": "dataset",
+      "n": 891,
+      "raw_decision_agreement": 0.9988776655443322,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.04108129441738129
+    },
+    {
+      "session": "C",
+      "role": "dataset",
+      "n": 685,
+      "raw_decision_agreement": 0.9956204379562044,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.39469262957572937
+    },
+    {
+      "session": "D",
+      "role": "dataset",
+      "n": 1439,
+      "raw_decision_agreement": 0.9979152189020153,
+      "stable_state_agreement": 0.9986101459346769,
+      "max_abs_dp": 0.4434814453125
+    },
+    {
+      "session": "E",
+      "role": "dataset",
+      "n": 1227,
+      "raw_decision_agreement": 0.9959250203748982,
+      "stable_state_agreement": 0.9991850040749797,
+      "max_abs_dp": 0.12385159730911255
+    },
+    {
+      "session": "F",
+      "role": "dataset",
+      "n": 912,
+      "raw_decision_agreement": 0.9989035087719298,
+      "stable_state_agreement": 1.0,
+      "max_abs_dp": 0.22840344905853271
+    }
+  ],
+  "device_inference_us": {
+    "n": 2194,
+    "median": 422.0,
+    "p10": 403.0,
+    "p90": 428.0
+  },
+  "optimization": {
+    "motion": {
+      "parameters": 273,
+      "weights_float32_bytes": 1092,
+      "tflite_float32_bytes": 3260,
+      "tflite_int8_bytes": 3424
+    },
+    "presence": {
+      "parameters": 273,
+      "weights_float32_bytes": 1092,
+      "tflite_float32_bytes": 3288,
+      "tflite_int8_bytes": 3480
+    }
+  }
+}

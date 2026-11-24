@@ -1,0 +1,4 @@
+fold,method,occupied_episodes_detected,occupied_episodes,empty_episodes_clean,empty_episodes
+LOSO,threshold_3x,21,21,20,27
+LOSO,logistic,19,21,24,27
+LOSO,mlp,19,21,23,27

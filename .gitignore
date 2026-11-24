@@ -1,0 +1,14 @@
+.pio/
+build/
+managed_components/
+sdkconfig.rx
+sdkconfig.tx
+sdkconfig.old
+__pycache__/
+*.pyc
+.venv/
+venv/
+tests_native/test_parity
+tests_native/test_parity.exe
+sdkconfig.rx_capture
+sdkconfig.rx_validation

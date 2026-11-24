@@ -1,0 +1,31 @@
+{
+  "model": "motion_int8",
+  "bytes": 3424,
+  "sha256": "ce819bd2f86e49c555ab5b50b093361920930232b9c9589e63ec01b38b32d6a3",
+  "float32_tflite_bytes": 3260,
+  "parameters": 273,
+  "ops": [
+    "FULLY_CONNECTED",
+    "LOGISTIC"
+  ],
+  "quantization": {
+    "in_scale": 0.02206612564623356,
+    "in_zero": -44,
+    "out_scale": 0.00390625,
+    "out_zero": -128
+  },
+  "input_shape": [
+    1,
+    7
+  ],
+  "output_shape": [
+    1,
+    1
+  ],
+  "float_torch_vs_keras_max_abs": 1.1920928955078125e-07,
+  "int8_vs_float_max_abs": 0.021970391273498535,
+  "int8_vs_float_mean_abs": 0.0016996090998873115,
+  "int8_vs_float_decision_agreement": 1.0,
+  "input_clip_fraction": 0.00018747656542932134,
+  "n_representative": 1524
+}

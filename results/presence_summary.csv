@@ -1,0 +1,13 @@
+fold,method,output,sessions,mean_balanced_accuracy,min_balanced_accuracy,pooled_recall,pooled_specificity
+LOSO,threshold_3x,janela,6,0.8142,0.6931,0.9404,0.6620
+LOSO,threshold_3x,estável,6,0.8184,0.6944,0.9489,0.6528
+LOSO,logistic,janela,6,0.8527,0.7789,0.8826,0.8695
+LOSO,logistic,estável,6,0.8683,0.7650,0.8848,0.8931
+LOSO,mlp,janela,6,0.8462,0.7776,0.8944,0.8215
+LOSO,mlp,estável,6,0.8612,0.7890,0.9062,0.8375
+treino (in-sample),threshold_3x,janela,6,0.8142,0.6931,0.9404,0.6620
+treino (in-sample),threshold_3x,estável,6,0.8184,0.6944,0.9489,0.6528
+treino (in-sample),logistic,janela,6,0.8816,0.8064,0.9039,0.8986
+treino (in-sample),logistic,estável,6,0.8874,0.8047,0.9017,0.9108
+treino (in-sample),mlp,janela,6,0.9121,0.8375,0.9399,0.9061
+treino (in-sample),mlp,estável,6,0.9186,0.8486,0.9635,0.8851

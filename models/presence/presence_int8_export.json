@@ -1,0 +1,31 @@
+{
+  "model": "presence_int8",
+  "bytes": 3480,
+  "sha256": "d8fa389a5387054a723cee024194a0d7f86f9f53e596b90c42289442a4a18024",
+  "float32_tflite_bytes": 3288,
+  "parameters": 273,
+  "ops": [
+    "FULLY_CONNECTED",
+    "LOGISTIC"
+  ],
+  "quantization": {
+    "in_scale": 0.023864444345235825,
+    "in_zero": -34,
+    "out_scale": 0.00390625,
+    "out_zero": -128
+  },
+  "input_shape": [
+    1,
+    7
+  ],
+  "output_shape": [
+    1,
+    1
+  ],
+  "float_torch_vs_keras_max_abs": 1.1920928955078125e-07,
+  "int8_vs_float_max_abs": 0.03806036710739136,
+  "int8_vs_float_mean_abs": 0.0024437725078314543,
+  "int8_vs_float_decision_agreement": 0.9975938402309913,
+  "input_clip_fraction": 6.874742197167606e-05,
+  "n_representative": 4156
+}

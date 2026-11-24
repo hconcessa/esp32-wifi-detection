@@ -1,0 +1,13 @@
+session,role,output,motion_reference_valid,n,recall,specificity,balanced_accuracy
+A,dataset,apenas presença,False,618,1.0000,0.6139,0.8069
+A,dataset,3 estados (presença OU movimento),False,618,1.0000,0.6139,0.8069
+B,dataset,apenas presença,True,559,0.9140,0.9929,0.9534
+B,dataset,3 estados (presença OU movimento),True,559,0.9140,0.9929,0.9534
+C,dataset,apenas presença,True,417,0.7379,0.9632,0.8506
+C,dataset,3 estados (presença OU movimento),True,417,0.7379,0.9632,0.8506
+D,dataset,apenas presença,True,1084,1.0000,0.7355,0.8677
+D,dataset,3 estados (presença OU movimento),True,1084,1.0000,0.7355,0.8677
+E,dataset,apenas presença,True,926,0.9400,0.8593,0.8997
+E,dataset,3 estados (presença OU movimento),True,926,0.9400,0.8593,0.8997
+F,dataset,apenas presença,False,552,0.5950,0.9830,0.7890
+F,dataset,3 estados (presença OU movimento),False,552,0.5950,0.9830,0.7890

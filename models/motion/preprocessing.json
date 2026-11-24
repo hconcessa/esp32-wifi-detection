@@ -1,0 +1,73 @@
+{
+  "stage": "motion",
+  "feature_indices": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "features": [
+    "carrier_change_mean",
+    "carrier_change_median",
+    "carrier_change_p90",
+    "frame_change_std",
+    "frame_change_p90",
+    "shape_change_mean",
+    "shape_change_p90"
+  ],
+  "calibration_windows": 20,
+  "eps": 1e-09,
+  "transform": "x = log(max(f,1e-9)/max(ref,1e-9)); z = (x-mean)/std",
+  "scaler_mean": [
+    0.34141817688941956,
+    0.32555320858955383,
+    0.43162739276885986,
+    0.9057574272155762,
+    0.4966893494129181,
+    0.5276168584823608,
+    0.7266255021095276
+  ],
+  "scaler_std": [
+    0.33848217129707336,
+    0.32598069310188293,
+    0.41898781061172485,
+    0.8067037463188171,
+    0.4773435890674591,
+    0.8254964351654053,
+    1.0051859617233276
+  ],
+  "architecture": [
+    7,
+    16,
+    8,
+    1
+  ],
+  "parameters": 273,
+  "hyperparameters": {
+    "hidden": [
+      16,
+      8
+    ],
+    "epochs": 160,
+    "lr": 0.002,
+    "weight_decay": 0.001,
+    "seed": 42
+  },
+  "training_setups": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "training_windows": 1524,
+  "final_training_loss": 0.04359738156199455,
+  "filter": {
+    "n": 5,
+    "enter": 0.65,
+    "exit": 0.35
+  }
+}

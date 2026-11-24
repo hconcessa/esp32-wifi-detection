@@ -1,0 +1,10 @@
+# Python 3.10–3.13. Versões testadas na geração dos resultados do README:
+#   numpy 2.5.5, pandas 3.1.1, scikit-learn 1.9.1, matplotlib 3.11.2,
+#   torch 2.15.0, tensorflow 2.21.0 (Python 3.13.18, Linux x86-64)
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+matplotlib>=3.8
+torch>=2.2
+tensorflow>=2.16      # apenas para a conversão TFLite INT8 (etapa 3) e o replay (etapa 4)
+pyserial>=3.5         # apenas para tools/capture_serial.py

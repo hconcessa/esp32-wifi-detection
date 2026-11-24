@@ -1,0 +1,110 @@
+{
+  "description": "Rotulos das capturas. Tempos em segundos de BOOT do RX (campo t_ms do log / 1000). Rotulos: EMPTY (sala vazia), STATIC (pessoa parada; inclui atras da parede e 2 pessoas), MOVING (caminhando), ARMS (parado mexendo so os bracos; so nos testes de movimento), UNKNOWN (excluido de treino e metricas). Nomes de fase: E0..En = vazio, P1..Pn = posicoes paradas, P1+P2 = duas pessoas, WALK = caminhada. role=dataset: entra no treino e na validacao cruzada; role=holdout: avaliada so no fim, com o modelo final (nenhuma sessao atual).",
+  "label_policy": {
+    "guard_start_s": 7.0,
+    "guard_end_s": 5.0,
+    "note": "Janelas a menos de guard_start_s apos o inicio ou guard_end_s antes do fim de cada fase sao descartadas (5 s de incerteza humana + 2 s de historia da janela CSI no inicio)."
+  },
+  "calibration": {
+    "windows": 20,
+    "note": "Emula o firmware: as 20 primeiras assinaturas com t >= calibration_start_s formam a referencia EMPTY. Essas janelas nunca entram em treino nem em metricas."
+  },
+  "sessions": [
+    {
+      "id": "A", "file": "dataset/presence/A.log", "role": "dataset", "date": "2026-11-18",
+      "original_file": "csi_signature_A.txt",
+      "geometry": "geometria A (sala original)", "calibration_start_s": 22,
+      "phases": [
+        ["E0", "EMPTY", 22, 80], ["P1", "STATIC", 80, 140], ["E1", "EMPTY", 140, 200],
+        ["P2", "STATIC", 200, 260], ["E2", "EMPTY", 260, 315], ["WALK", "MOVING", 315, 355],
+        ["E3", "EMPTY", 355, 415]
+      ]
+    },
+    {
+      "id": "B", "file": "dataset/presence/B.log", "role": "dataset", "date": "2026-11-18",
+      "original_file": "csi_signature_B.txt",
+      "geometry": "geometria B (TX deslocado)", "calibration_start_s": 22,
+      "phases": [
+        ["E0", "EMPTY", 22, 80], ["P1", "STATIC", 80, 140], ["E1", "EMPTY", 140, 200],
+        ["P2", "STATIC", 200, 260], ["E2", "EMPTY", 260, 315], ["WALK", "MOVING", 315, 365],
+        ["E3", "UNKNOWN", 365, 422]
+      ],
+      "notes": "E3 UNKNOWN: possivel segunda pessoa no comodo vizinho."
+    },
+    {
+      "id": "C", "file": "dataset/presence/C.log", "role": "dataset", "date": "2026-11-18",
+      "original_file": "csi_signature_C.txt",
+      "geometry": "geometria C", "calibration_start_s": 12,
+      "phases": [
+        ["E0", "EMPTY", 0, 42], ["P1", "STATIC", 42, 70], ["E1", "EMPTY", 70, 110],
+        ["P2", "STATIC", 110, 140], ["E2", "EMPTY", 140, 180], ["P3", "STATIC", 180, 210],
+        ["E3", "EMPTY", 210, 253], ["WALK", "MOVING", 253, 283], ["E4", "EMPTY", 283, 323]
+      ],
+      "notes": "P1 dentro do quarto, P2 na porta, P3 atras da parede."
+    },
+    {
+      "id": "D", "file": "dataset/presence/D.log", "role": "dataset", "date": "2026-11-21",
+      "original_file": "csi_signature_D2.txt",
+      "geometry": "campanha de 21/11", "calibration_start_s": 20,
+      "phases": [
+        ["E0", "EMPTY", 0, 80], ["P1", "STATIC", 80, 139], ["E1", "EMPTY", 139, 200],
+        ["P2", "STATIC", 200, 260], ["E2", "EMPTY", 260, 315], ["P3", "STATIC", 315, 375],
+        ["E3", "EMPTY", 375, 435], ["P1+P2", "STATIC", 435, 495], ["E4", "EMPTY", 495, 555],
+        ["P2_REP", "STATIC", 555, 615], ["E5", "EMPTY", 615, 675]
+      ],
+      "notes": "P1+P2 = duas pessoas paradas; P2_REP = repeticao da posicao P2."
+    },
+    {
+      "id": "E", "file": "dataset/presence/E.log", "role": "dataset", "date": "2026-11-21",
+      "original_file": "csi_signature_D0020_pt1.txt",
+      "geometry": "campanha de 21/11", "calibration_start_s": 20,
+      "phases": [
+        ["E0", "EMPTY", 0, 90], ["P1", "STATIC", 90, 150], ["E1", "EMPTY", 150, 210],
+        ["P2", "STATIC", 210, 270], ["E2", "EMPTY", 270, 330], ["P3", "STATIC", 330, 390],
+        ["E3", "EMPTY", 390, 450], ["P1+P2", "STATIC", 450, 510], ["E4", "EMPTY", 510, 575]
+      ],
+      "notes": "P1+P2 = duas pessoas paradas."
+    },
+    {
+      "id": "F", "file": "dataset/presence/F.log", "role": "dataset", "date": "2026-11-21",
+      "original_file": "csi_signature_D0020_pt2.log",
+      "geometry": "campanha de 21/11", "calibration_start_s": 20,
+      "phases": [
+        ["E0", "EMPTY", 0, 60], ["P1", "STATIC", 60, 120], ["E1", "EMPTY", 120, 180],
+        ["P2", "UNKNOWN", 180, 240], ["E2", "EMPTY", 240, 300], ["P3", "STATIC", 300, 360],
+        ["E3", "EMPTY", 360, 420]
+      ],
+      "notes": "P2 UNKNOWN: um gato se movia junto com a pessoa."
+    }
+  ],
+  "motion_feature_setups": {
+    "description": "CSVs com as 12 features calculadas no ESP32 por janela (f0..f11). Uma gravacao por condicao (empty, static, moving). As 20 primeiras janelas EMPTY de cada setup sao a calibracao.",
+    "train": [
+      ["M1", "robustness", "dataset/motion/M1", "baseline (referencia)"],
+      ["M2", "robustness", "dataset/motion/M2", "RX reiniciado"],
+      ["M3", "robustness", "dataset/motion/M3", "TX reiniciado"],
+      ["M4", "independent", "dataset/motion/M4", "nova sessao"],
+      ["M5", "independent", "dataset/motion/M5", "geometria alterada"]
+    ]
+  },
+  "motion_live_logs": [
+    {
+      "id": "live_A", "file": "tests/motion_live/live_A.log", "date": "2026-11-13",
+      "original_file": "core7_shadow_0010.txt",
+      "phases": [["E0", "EMPTY", 22, 75], ["P1", "STATIC", 75, 110], ["WALK", "MOVING", 110, 145],
+                 ["ARMS", "ARMS", 145, 180], ["E1", "EMPTY", 180, 387]]
+    },
+    {
+      "id": "live_B", "file": "tests/motion_live/live_B.log", "date": "2026-11-15",
+      "original_file": "core7_test_A.txt",
+      "phases": [["E0", "EMPTY", 22, 80], ["P1", "STATIC", 80, 120], ["WALK", "MOVING", 120, 165],
+                 ["ARMS", "ARMS", 165, 205], ["E1", "EMPTY", 205, 300]]
+    },
+    {
+      "id": "live_C", "file": "tests/motion_live/live_C.log", "date": "2026-11-15",
+      "original_file": "core7_test_B.txt",
+      "phases": [["E0", "EMPTY", 22, 80], ["P1", "STATIC", 80, 120], ["WALK", "MOVING", 120, 165],
+                 ["ARMS", "ARMS", 165, 205], ["E1", "EMPTY", 205, 300]]
+    }
+  ]
+}

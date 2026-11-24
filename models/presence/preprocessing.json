@@ -1,0 +1,78 @@
+{
+  "stage": "presence",
+  "features": [
+    "shape_rms",
+    "shape_mae",
+    "shape_p90",
+    "shape_max",
+    "corr_loss",
+    "rssi_shift",
+    "temporal_delta"
+  ],
+  "floors": [
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    1e-05,
+    0.25,
+    0.001
+  ],
+  "calibration_windows": 20,
+  "lag_windows": 5,
+  "clip": [
+    0.01,
+    10000.0
+  ],
+  "transform": "p=s/mean(s); F=features(p,ref,rssi); x=log(clip(F/scale,0.01,1e4)); z=(x-mean)/std",
+  "scaler_mean": [
+    1.742901086807251,
+    1.808670997619629,
+    1.6954759359359741,
+    1.5072811841964722,
+    3.203688621520996,
+    0.07460528612136841,
+    0.5775693655014038
+  ],
+  "scaler_std": [
+    1.3728628158569336,
+    1.4127123355865479,
+    1.334642767906189,
+    1.2266219854354858,
+    2.686976909637451,
+    2.4522249698638916,
+    1.2360999584197998
+  ],
+  "architecture": [
+    7,
+    16,
+    8,
+    1
+  ],
+  "parameters": 273,
+  "hyperparameters": {
+    "hidden": [
+      16,
+      8
+    ],
+    "epochs": 300,
+    "lr": 0.003,
+    "weight_decay": 0.001,
+    "seed": 42
+  },
+  "training_sessions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "training_windows": 4156,
+  "final_training_loss": 0.22621561586856842,
+  "filter": {
+    "n": 5,
+    "enter": 0.65,
+    "exit": 0.35
+  }
+}

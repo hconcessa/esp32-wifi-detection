@@ -1,0 +1,33 @@
+fold,model,kind,n,balanced_accuracy,recall,specificity,FP,FN,static_false_moving_rate
+LOSO:M1,mlp,raw,217,0.9711,0.9494,0.9928,1,4,0.0000
+LOSO:M1,mlp,stable,205,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M1,logistic,raw,217,0.9819,1.0000,0.9638,5,0,0.0000
+LOSO:M1,logistic,stable,205,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M2,mlp,raw,218,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M2,mlp,stable,206,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M2,logistic,raw,218,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M2,logistic,stable,206,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M3,mlp,raw,217,0.9937,0.9873,1.0000,0,1,0.0000
+LOSO:M3,mlp,stable,205,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M3,logistic,raw,217,0.9937,0.9873,1.0000,0,1,0.0000
+LOSO:M3,logistic,stable,205,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M4,mlp,raw,436,0.9901,0.9803,1.0000,0,3,0.0000
+LOSO:M4,mlp,stable,424,0.9966,0.9932,1.0000,0,1,0.0000
+LOSO:M4,logistic,raw,436,0.9901,0.9803,1.0000,0,3,0.0000
+LOSO:M4,logistic,stable,424,0.9966,0.9932,1.0000,0,1,0.0000
+LOSO:M5,mlp,raw,436,0.9868,0.9737,1.0000,0,4,0.0000
+LOSO:M5,mlp,stable,424,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M5,logistic,raw,436,1.0000,1.0000,1.0000,0,0,0.0000
+LOSO:M5,logistic,stable,424,1.0000,1.0000,1.0000,0,0,0.0000
+campaign:robustness,mlp,raw,652,0.9882,0.9789,0.9976,1,5,0.0000
+campaign:robustness,mlp,stable,616,1.0000,1.0000,1.0000,0,0,0.0000
+campaign:robustness,logistic,raw,652,0.9928,1.0000,0.9855,6,0,0.0000
+campaign:robustness,logistic,stable,616,1.0000,1.0000,1.0000,0,0,0.0000
+campaign:independent,mlp,raw,872,0.9901,0.9803,1.0000,0,6,0.0000
+campaign:independent,mlp,stable,848,0.9983,0.9966,1.0000,0,1,0.0000
+campaign:independent,logistic,raw,872,0.9951,0.9901,1.0000,0,3,0.0000
+campaign:independent,logistic,stable,848,0.9983,0.9966,1.0000,0,1,0.0000
+treino (in-sample),mlp,raw,1524,0.9893,0.9797,0.9990,1,11,0.0000
+treino (in-sample),mlp,stable,1464,0.9990,0.9981,1.0000,0,1,0.0000
+treino (in-sample),logistic,raw,1524,0.9967,0.9945,0.9990,1,3,0.0000
+treino (in-sample),logistic,stable,1464,0.9990,0.9981,1.0000,0,1,0.0000
