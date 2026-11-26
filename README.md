@@ -36,6 +36,9 @@ de "ocupado": confundir uma com a outra é aceitável; confundir qualquer uma de
 | LED + resistor 330 Ω | indicação dos 3 estados | saída visível sem serial |
 | jumper GPIO26–3V3 | pedir calibração da sala vazia no boot | operação sem PC |
 
+
+![Esquemático](docs/figures/schematic.png)
+
 ### Software do firmware (ESP32)
 
 | ferramenta / versão | papel no projeto | justificativa |
